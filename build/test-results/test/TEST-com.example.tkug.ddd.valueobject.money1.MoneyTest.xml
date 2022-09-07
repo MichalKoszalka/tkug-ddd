@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.tkug.ddd.valueobject.money1.MoneyTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-09-05T12:55:50" hostname="Transmit-MichalK-Remote" time="0.026">
+  <properties/>
+  <testcase name="can do whatever I want()" classname="com.example.tkug.ddd.valueobject.money1.MoneyTest" time="0.013"/>
+  <testcase name="can sum up amounts from 2 orders()" classname="com.example.tkug.ddd.valueobject.money1.MoneyTest" time="0.013"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
