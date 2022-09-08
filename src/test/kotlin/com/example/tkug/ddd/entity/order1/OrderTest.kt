@@ -20,6 +20,17 @@ internal class OrderTest {
         assertEquals(receivedOrder.status, Order.OrderStatus.accepted)
     }
 
+    @Test
+    fun `accepted order cannot be rejected`() {
+        // given
+        val acceptedOrder = Order(Order.OrderStatus.accepted)
+
+        // when + then
+        assertThrows<IllegalStateException> {
+            acceptedOrder.reject()
+        }
+    }
+
     @ParameterizedTest
     @EnumSource(
         value = Order.OrderStatus::class,
@@ -35,17 +46,6 @@ internal class OrderTest {
 
         // then
         assertEquals(receivedOrder.status, Order.OrderStatus.accepted)
-    }
-
-    @Test
-    fun `accepted order cannot be rejected`() {
-        // given
-        val acceptedOrder = Order(Order.OrderStatus.accepted)
-
-        // when + then
-        assertThrows<IllegalStateException> {
-            acceptedOrder.reject()
-        }
     }
 
 }
